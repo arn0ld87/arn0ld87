@@ -16,6 +16,11 @@ Build hineingerechnet. Bild tauschen heisst: PNG ersetzen, Skript laufen lassen.
 
 Die Ausgabe-SVGs sind danach eigenstaendig - keine externen Referenzen, kein
 JavaScript, nur SVG, CSS-Animation und SMIL.
+
+Die eingebettete Kopie ist bewusst klein: das Portraet erscheint auf der Karte
+mit rund 216 CSS-Pixeln, eingebettet werden 420x420 als JPEG (~24 KB). Das
+vollaufloesende Asset bleibt daneben als assets/alex-profile.webp erhalten -
+verlustfrei, 900x900 - und dient als Quelle fuer diesen Build.
 """
 from __future__ import annotations
 
@@ -42,8 +47,10 @@ class Source(NamedTuple):
 
 SOURCES: dict[str, Source] = {
     "portrait": Source(
-        src="alex-profile.png",
-        crop="900x900+170+60",     # quadratisch, Gesicht im Kreismittelpunkt
+        # Quelle ist bereits quadratisch zugeschnitten (Kopf + Oberkoerper),
+        # deshalb hier nur noch skalieren.
+        src="alex-profile.webp",
+        crop="660x660+70+0",       # Gesicht in den Kreismittelpunkt ruecken
         size="420x420",
         quality="85",
         extra=["-modulate", "100,104,100"],   # Saettigung leicht an die Palette angeglichen
