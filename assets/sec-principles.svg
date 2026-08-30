@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 78" width="1280" height="78" role="img" aria-label="ENGINEERING PRINCIPLES — the rules that survive every refactor">
+<title>ENGINEERING PRINCIPLES</title>
+<defs>
+  <style><![CDATA[
+    .mono{font-family:ui-monospace,"SFMono-Regular","JetBrains Mono","IBM Plex Mono",Menlo,Consolas,"Liberation Mono",monospace}
+    .sans{font-family:Inter,"Inter var",system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+    @keyframes fade{from{opacity:0}to{opacity:1}}
+    @keyframes slide{from{opacity:0;transform:translate(-10px,0)}to{opacity:1;transform:translate(0,0)}}
+    @keyframes grow{from{transform:scale(0,1)}to{transform:scale(1,1)}}
+    @keyframes led{0%,100%{opacity:.3}50%{opacity:1}}
+    .t{opacity:0;animation:slide .5s cubic-bezier(.2,.7,.2,1) .05s forwards}
+    .s{opacity:0;animation:slide .5s cubic-bezier(.2,.7,.2,1) .17s forwards}
+    .i{opacity:0;animation:fade .6s ease .3s forwards}
+    .ln{transform-origin:0 0;animation:grow .8s cubic-bezier(.2,.7,.2,1) .1s backwards}
+    .d{animation:led 3.2s ease-in-out infinite}
+    @media (prefers-reduced-motion:reduce){
+      .t,.s,.i{opacity:1!important;animation:none!important;transform:none!important}
+      .ln{animation:none!important}.d{animation:none!important}
+    }
+  ]]></style>
+  <linearGradient id="ln03" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%" stop-color="#2388FF" stop-opacity=".85"/>
+    <stop offset="42%" stop-color="#2388FF" stop-opacity=".18"/>
+    <stop offset="100%" stop-color="#2388FF" stop-opacity="0"/>
+  </linearGradient>
+</defs>
+
+<rect width="1280" height="78" fill="none"/>
+
+<text class="mono t" x="0" y="34" font-size="20" font-weight="700" fill="#2388FF" letter-spacing="-1">//</text>
+<text class="sans t" x="34" y="34" font-size="19" font-weight="700" fill="#E6EDF3" letter-spacing="3.6">ENGINEERING PRINCIPLES</text>
+<text class="mono s" x="34" y="54" font-size="10.5" fill="#5B6C7C" letter-spacing="1.7">the rules that survive every refactor</text>
+
+<g class="i">
+  <circle class="d" cx="1156" cy="29" r="3" fill="#2388FF"/>
+  <text class="mono" x="1280" y="33" font-size="10.5" fill="#4E5E6C" letter-spacing="2.4" text-anchor="end">[ 03 / 06 ]</text>
+</g>
+
+<rect class="ln" x="0" y="68" width="1280" height="1.5" rx=".75" fill="url(#ln03)"/>
+</svg>

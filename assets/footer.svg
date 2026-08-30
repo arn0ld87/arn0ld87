@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 190" width="1280" height="190" role="img" aria-label="Build, harden, automate — Alexander Schneider, System Integration, Leipzig.">
+<title>BUILD // HARDEN // AUTOMATE</title>
+
+<defs>
+  <style><![CDATA[
+    .mono{font-family:ui-monospace,"SFMono-Regular","JetBrains Mono","IBM Plex Mono",Menlo,Consolas,"Liberation Mono",monospace}
+    .sans{font-family:Inter,"Inter var",system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+    @keyframes fade{from{opacity:0}to{opacity:1}}
+    @keyframes rise{from{opacity:0;transform:translate(0,8px)}to{opacity:1;transform:translate(0,0)}}
+    @keyframes caret{0%,45%{opacity:1}46%,100%{opacity:0}}
+    @keyframes led{0%,100%{opacity:.3}50%{opacity:1}}
+    .f1{opacity:0;animation:rise .7s cubic-bezier(.2,.7,.2,1) .15s forwards}
+    .f2{opacity:0;animation:fade .7s ease .5s forwards}
+    .f3{opacity:0;animation:fade .7s ease .75s forwards}
+    .cur{animation:caret 1.05s step-end infinite}
+    .d{animation:led 3s ease-in-out infinite}
+    @media (prefers-reduced-motion:reduce){
+      .f1,.f2,.f3{opacity:1!important;animation:none!important;transform:none!important}
+      .cur,.d{animation:none!important}
+    }
+  ]]></style>
+  <linearGradient id="fbg" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#080C11" stop-opacity="0"/>
+    <stop offset="20%" stop-color="#0B1015"/>
+    <stop offset="100%" stop-color="#070A0D"/>
+  </linearGradient>
+  <linearGradient id="fclaim" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%" stop-color="#2388FF"/>
+    <stop offset="50%" stop-color="#E6EDF3"/>
+    <stop offset="100%" stop-color="#00C2FF"/>
+  </linearGradient>
+  <linearGradient id="frule" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%" stop-color="#2388FF" stop-opacity="0"/>
+    <stop offset="50%" stop-color="#2388FF" stop-opacity=".55"/>
+    <stop offset="100%" stop-color="#2388FF" stop-opacity="0"/>
+  </linearGradient>
+  <pattern id="fgrid" width="32" height="32" patternUnits="userSpaceOnUse">
+    <path d="M32 0H0V32" fill="none" stroke="#131C25" stroke-width="1" stroke-opacity=".45"/>
+  </pattern>
+  <filter id="fg" x="-300%" y="-300%" width="700%" height="700%">
+    <feGaussianBlur stdDeviation="1.8" result="b"/>
+    <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <clipPath id="fclip"><rect width="1280" height="190" rx="12"/></clipPath>
+</defs>
+
+<g clip-path="url(#fclip)">
+  <rect width="1280" height="190" fill="url(#fbg)"/>
+  <rect width="1280" height="190" fill="url(#fgrid)"/>
+  <rect x="220" y="26" width="840" height="1.5" rx=".75" fill="url(#frule)"/>
+
+  <!-- 27 Zeichen: schlimmstenfalls ~722px breit, zentriert also 279-1001 von 1280 -->
+  <text class="sans f1" x="640" y="80" font-size="25" font-weight="700" fill="url(#fclaim)"
+        letter-spacing="8" text-anchor="middle">BUILD // HARDEN // AUTOMATE</text>
+
+  <g class="f2">
+    <text class="mono" x="640" y="118" font-size="12.5" text-anchor="middle" letter-spacing=".4">
+      <tspan fill="#22C55E">alex@infra</tspan><tspan fill="#3D4C5A">:</tspan><tspan fill="#2388FF">~</tspan><tspan fill="#3D4C5A">$</tspan><tspan fill="#AAB4BE" dx="6">uptime</tspan><tspan class="cur" fill="#00C2FF" dx="2">&#9608;</tspan>
+    </text>
+    <text class="mono" x="640" y="140" font-size="11.5" fill="#5B6C7C" text-anchor="middle" letter-spacing=".6">up — building, breaking and rebuilding since the first Linux install</text>
+  </g>
+
+  <g class="f3">
+    <path d="M220 158 H1060" stroke="#141E28" stroke-width="1"/>
+    <circle class="d" cx="450" cy="175" r="3" fill="#22C55E" filter="url(#fg)"/>
+    <text class="mono" x="464" y="179" font-size="10" fill="#3D4C5A" letter-spacing="2">SYSTEM ONLINE</text>
+    <text class="mono" x="850" y="179" font-size="10" fill="#3D4C5A" letter-spacing="2" text-anchor="end">alex-schneider.dev &#183; LEIPZIG</text>
+  </g>
+</g>
+</svg>

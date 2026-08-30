@@ -1,0 +1,5 @@
+# macOS
+.DS_Store
+
+# lokale Renderings der Pruefvorschau
+assets/_render/

@@ -1,0 +1,134 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 372" width="1280" height="372" role="img" aria-label="Current Operations: Linux Hardening, CI/CD, Container Practices, Network Engineering, Secure API Integration, AI Infrastructure, Automation.">
+<title>Current Operations</title>
+
+<defs>
+  <style><![CDATA[
+    .mono{font-family:ui-monospace,"SFMono-Regular","JetBrains Mono","IBM Plex Mono",Menlo,Consolas,"Liberation Mono",monospace}
+    .sans{font-family:Inter,"Inter var",system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+    @keyframes rowIn{from{opacity:0;transform:translate(-10px,0)}to{opacity:1;transform:translate(0,0)}}
+    @keyframes fade{from{opacity:0}to{opacity:1}}
+    @keyframes led{0%,100%{opacity:.28}50%{opacity:1}}
+    @keyframes sweep{0%{transform:translate(-160px,0)}70%,100%{transform:translate(1300px,0)}}
+    .r{opacity:0;animation:rowIn .5s cubic-bezier(.2,.7,.2,1) forwards}
+    .r1{animation-delay:.26s}.r2{animation-delay:.36s}.r3{animation-delay:.46s}.r4{animation-delay:.56s}
+    .r5{animation-delay:.66s}.r6{animation-delay:.76s}.r7{animation-delay:.86s}
+    .h{opacity:0;animation:fade .5s ease .08s forwards}
+    .l1{animation:led 2.9s ease-in-out infinite}
+    .l2{animation:led 3.4s ease-in-out .3s infinite}
+    .l3{animation:led 2.5s ease-in-out .7s infinite}
+    .l4{animation:led 3.8s ease-in-out .15s infinite}
+    .l5{animation:led 3.1s ease-in-out .9s infinite}
+    .l6{animation:led 2.7s ease-in-out .5s infinite}
+    .l7{animation:led 3.6s ease-in-out 1.1s infinite}
+    .sw{animation:sweep 9s cubic-bezier(.35,0,.3,1) 1.6s infinite}
+    @media (prefers-reduced-motion:reduce){
+      .r,.h{opacity:1!important;animation:none!important;transform:none!important}
+      .l1,.l2,.l3,.l4,.l5,.l6,.l7,.sw{animation:none!important}
+    }
+  ]]></style>
+  <linearGradient id="obg" x1="0" y1="0" x2=".8" y2="1">
+    <stop offset="0%" stop-color="#0D131A"/>
+    <stop offset="100%" stop-color="#080C11"/>
+  </linearGradient>
+  <linearGradient id="ohr" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%" stop-color="#00C2FF" stop-opacity=".65"/>
+    <stop offset="70%" stop-color="#00C2FF" stop-opacity=".1"/>
+    <stop offset="100%" stop-color="#00C2FF" stop-opacity="0"/>
+  </linearGradient>
+  <linearGradient id="swG" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%" stop-color="#00C2FF" stop-opacity="0"/>
+    <stop offset="50%" stop-color="#00C2FF" stop-opacity=".07"/>
+    <stop offset="100%" stop-color="#00C2FF" stop-opacity="0"/>
+  </linearGradient>
+  <pattern id="ogrid" width="32" height="32" patternUnits="userSpaceOnUse">
+    <path d="M32 0H0V32" fill="none" stroke="#141E28" stroke-width="1" stroke-opacity=".5"/>
+  </pattern>
+  <filter id="og" x="-300%" y="-300%" width="700%" height="700%">
+    <feGaussianBlur stdDeviation="1.8" result="b"/>
+    <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <clipPath id="oclip"><rect width="1280" height="372" rx="12"/></clipPath>
+</defs>
+
+<g clip-path="url(#oclip)">
+  <rect width="1280" height="372" fill="url(#obg)"/>
+  <rect width="1280" height="372" fill="url(#ogrid)"/>
+  <g class="sw"><rect x="0" y="0" width="160" height="372" fill="url(#swG)"/></g>
+
+  <!-- Kopf -->
+  <g class="h">
+    <text class="mono" x="40" y="42" font-size="12.5" letter-spacing="2.6" fill="#00C2FF">OPERATIONS BOARD</text>
+    <circle class="l1" cx="1104" cy="38" r="3.2" fill="#22C55E" filter="url(#og)"/>
+    <text class="mono" x="1240" y="42" font-size="10" fill="#4E5E6C" letter-spacing="2" text-anchor="end">7 LANES ACTIVE</text>
+    <rect x="40" y="56" width="1200" height="1.5" rx=".75" fill="url(#ohr)"/>
+    <g class="mono" font-size="9" fill="#3D4C5A" letter-spacing="2.2">
+      <text x="40" y="80">ID</text>
+      <text x="90" y="80">OPERATION</text>
+      <text x="560" y="80">WORKING SET</text>
+      <text x="1240" y="80" text-anchor="end">LANE</text>
+    </g>
+    <path d="M40 88 H1240" stroke="#18232E" stroke-width="1"/>
+  </g>
+
+  <!-- Zeilen -->
+  <g class="mono">
+    <g class="r r1">
+      <text x="40" y="116" font-size="10.5" fill="#2E4964">01</text>
+      <circle class="l1" cx="74" cy="112" r="3.2" fill="#22C55E" filter="url(#og)"/>
+      <text class="sans" x="90" y="117" font-size="14.5" font-weight="600" fill="#E6EDF3">Linux Hardening</text>
+      <text x="560" y="116" font-size="10.5" fill="#6C7B8A" letter-spacing=".6">ssh keys &#183; ufw &#183; least privilege &#183; unattended upgrades</text>
+      <text x="1240" y="116" font-size="9.5" fill="#2388FF" letter-spacing="1.8" text-anchor="end">SECURITY</text>
+      <path d="M40 130 H1240" stroke="#141E28" stroke-width="1"/>
+    </g>
+    <g class="r r2">
+      <text x="40" y="152" font-size="10.5" fill="#2E4964">02</text>
+      <circle class="l2" cx="74" cy="148" r="3.2" fill="#22C55E" filter="url(#og)"/>
+      <text class="sans" x="90" y="153" font-size="14.5" font-weight="600" fill="#E6EDF3">CI/CD</text>
+      <text x="560" y="152" font-size="10.5" fill="#6C7B8A" letter-spacing=".6">github actions &#183; pre-commit &#183; pinned versions</text>
+      <text x="1240" y="152" font-size="9.5" fill="#2388FF" letter-spacing="1.8" text-anchor="end">DEVOPS</text>
+      <path d="M40 166 H1240" stroke="#141E28" stroke-width="1"/>
+    </g>
+    <g class="r r3">
+      <text x="40" y="188" font-size="10.5" fill="#2E4964">03</text>
+      <circle class="l3" cx="74" cy="184" r="3.2" fill="#22C55E" filter="url(#og)"/>
+      <text class="sans" x="90" y="189" font-size="14.5" font-weight="600" fill="#E6EDF3">Container Best Practices</text>
+      <text x="560" y="188" font-size="10.5" fill="#6C7B8A" letter-spacing=".6">compose &#183; slim images &#183; healthchecks &#183; volumes</text>
+      <text x="1240" y="188" font-size="9.5" fill="#2388FF" letter-spacing="1.8" text-anchor="end">PLATFORM</text>
+      <path d="M40 202 H1240" stroke="#141E28" stroke-width="1"/>
+    </g>
+    <g class="r r4">
+      <text x="40" y="224" font-size="10.5" fill="#2E4964">04</text>
+      <circle class="l4" cx="74" cy="220" r="3.2" fill="#22C55E" filter="url(#og)"/>
+      <text class="sans" x="90" y="225" font-size="14.5" font-weight="600" fill="#E6EDF3">Network Engineering</text>
+      <text x="560" y="224" font-size="10.5" fill="#6C7B8A" letter-spacing=".6">vlan &#183; routing &#183; dns &#183; dhcp &#183; overlay networks</text>
+      <text x="1240" y="224" font-size="9.5" fill="#2388FF" letter-spacing="1.8" text-anchor="end">NETWORK</text>
+      <path d="M40 238 H1240" stroke="#141E28" stroke-width="1"/>
+    </g>
+    <g class="r r5">
+      <text x="40" y="260" font-size="10.5" fill="#2E4964">05</text>
+      <circle class="l5" cx="74" cy="256" r="3.2" fill="#22C55E" filter="url(#og)"/>
+      <text class="sans" x="90" y="261" font-size="14.5" font-weight="600" fill="#E6EDF3">Secure API Integration</text>
+      <text x="560" y="260" font-size="10.5" fill="#6C7B8A" letter-spacing=".6">scoped tokens &#183; secret vaulting &#183; no creds in git</text>
+      <text x="1240" y="260" font-size="9.5" fill="#2388FF" letter-spacing="1.8" text-anchor="end">SECURITY</text>
+      <path d="M40 274 H1240" stroke="#141E28" stroke-width="1"/>
+    </g>
+    <g class="r r6">
+      <text x="40" y="296" font-size="10.5" fill="#2E4964">06</text>
+      <circle class="l6" cx="74" cy="292" r="3.2" fill="#00C2FF" filter="url(#og)"/>
+      <text class="sans" x="90" y="297" font-size="14.5" font-weight="600" fill="#E6EDF3">AI Infrastructure</text>
+      <text x="560" y="296" font-size="10.5" fill="#6C7B8A" letter-spacing=".6">ollama &#183; local llms &#183; neo4j graphs &#183; mcp servers</text>
+      <text x="1240" y="296" font-size="9.5" fill="#00C2FF" letter-spacing="1.8" text-anchor="end">AI</text>
+      <path d="M40 310 H1240" stroke="#141E28" stroke-width="1"/>
+    </g>
+    <g class="r r7">
+      <text x="40" y="332" font-size="10.5" fill="#2E4964">07</text>
+      <circle class="l7" cx="74" cy="328" r="3.2" fill="#22C55E" filter="url(#og)"/>
+      <text class="sans" x="90" y="333" font-size="14.5" font-weight="600" fill="#E6EDF3">Automation</text>
+      <text x="560" y="332" font-size="10.5" fill="#6C7B8A" letter-spacing=".6">bash &#183; python &#183; runbooks &#183; scheduled jobs</text>
+      <text x="1240" y="332" font-size="9.5" fill="#2388FF" letter-spacing="1.8" text-anchor="end">AUTOMATION</text>
+    </g>
+  </g>
+
+  <rect x=".5" y=".5" width="1279" height="371" rx="12" fill="none" stroke="#1B2733"/>
+</g>
+</svg>

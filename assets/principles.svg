@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 336" width="1280" height="336" role="img" aria-label="Engineering Principles: Automate repetitive work, prefer reproducible infrastructure, harden before exposing, observe before guessing, CLI first GUI when useful, backups are only real after restore testing.">
+<title>Engineering Principles</title>
+
+<defs>
+  <style><![CDATA[
+    .mono{font-family:ui-monospace,"SFMono-Regular","JetBrains Mono","IBM Plex Mono",Menlo,Consolas,"Liberation Mono",monospace}
+    .sans{font-family:Inter,"Inter var",system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+    @keyframes slide{from{opacity:0;transform:translate(-12px,0)}to{opacity:1;transform:translate(0,0)}}
+    @keyframes fade{from{opacity:0}to{opacity:1}}
+    @keyframes caret{0%,45%{opacity:1}46%,100%{opacity:0}}
+    .p{opacity:0;animation:slide .55s cubic-bezier(.2,.7,.2,1) forwards}
+    .p1{animation-delay:.30s}.p2{animation-delay:.42s}.p3{animation-delay:.54s}
+    .p4{animation-delay:.66s}.p5{animation-delay:.78s}.p6{animation-delay:.90s}
+    .q{opacity:0;animation:fade .8s ease 1.15s forwards}
+    .h{opacity:0;animation:fade .5s ease .1s forwards}
+    .cur{animation:caret 1.05s step-end infinite}
+    @media (prefers-reduced-motion:reduce){
+      .p,.q,.h{opacity:1!important;animation:none!important;transform:none!important}
+      .cur{animation:none!important}
+    }
+  ]]></style>
+  <linearGradient id="pbg" x1="0" y1="0" x2=".8" y2="1">
+    <stop offset="0%" stop-color="#0D131A"/>
+    <stop offset="100%" stop-color="#080C11"/>
+  </linearGradient>
+  <linearGradient id="hr" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%" stop-color="#2388FF" stop-opacity=".7"/>
+    <stop offset="70%" stop-color="#2388FF" stop-opacity=".12"/>
+    <stop offset="100%" stop-color="#2388FF" stop-opacity="0"/>
+  </linearGradient>
+  <pattern id="pgrid" width="32" height="32" patternUnits="userSpaceOnUse">
+    <path d="M32 0H0V32" fill="none" stroke="#141E28" stroke-width="1" stroke-opacity=".55"/>
+  </pattern>
+  <clipPath id="pclip"><rect width="1280" height="336" rx="12"/></clipPath>
+</defs>
+
+<g clip-path="url(#pclip)">
+  <rect width="1280" height="336" fill="url(#pbg)"/>
+  <rect width="1280" height="336" fill="url(#pgrid)"/>
+
+  <!-- Kopf -->
+  <g class="h">
+    <text class="mono" x="40" y="46" font-size="13" letter-spacing=".4">
+      <tspan fill="#22C55E">alex@infra</tspan><tspan fill="#3D4C5A">:</tspan><tspan fill="#2388FF">~</tspan><tspan fill="#3D4C5A">$</tspan><tspan fill="#AAB4BE" dx="6">cat /etc/engineering/principles</tspan><tspan class="cur" fill="#00C2FF" dx="2">&#9608;</tspan>
+    </text>
+    <text class="mono" x="1240" y="46" font-size="10" fill="#3D4C5A" letter-spacing="2" text-anchor="end">6 RULES &#183; NON-NEGOTIABLE</text>
+    <rect x="40" y="60" width="1200" height="1.5" rx=".75" fill="url(#hr)"/>
+  </g>
+
+  <!-- Spalte links -->
+  <g>
+    <g class="p p1">
+      <text class="mono" x="40" y="112" font-size="20" fill="#1E3B58" font-weight="700">01</text>
+      <text class="sans" x="86" y="108" font-size="16" font-weight="600" fill="#E6EDF3">Automate repetitive work</text>
+      <text class="mono" x="86" y="128" font-size="10.5" fill="#5B6C7C" letter-spacing=".7">If it happens twice, it becomes a script.</text>
+      <path d="M76 92 V134" stroke="#1E2A36" stroke-width="1.5"/>
+    </g>
+    <g class="p p2">
+      <text class="mono" x="40" y="182" font-size="20" fill="#1E3B58" font-weight="700">02</text>
+      <text class="sans" x="86" y="178" font-size="16" font-weight="600" fill="#E6EDF3">Prefer reproducible infrastructure</text>
+      <text class="mono" x="86" y="198" font-size="10.5" fill="#5B6C7C" letter-spacing=".7">A host you cannot rebuild is a host you do not own.</text>
+      <path d="M76 162 V204" stroke="#1E2A36" stroke-width="1.5"/>
+    </g>
+    <g class="p p3">
+      <text class="mono" x="40" y="252" font-size="20" fill="#1E3B58" font-weight="700">03</text>
+      <text class="sans" x="86" y="248" font-size="16" font-weight="600" fill="#E6EDF3">Harden before exposing</text>
+      <text class="mono" x="86" y="268" font-size="10.5" fill="#5B6C7C" letter-spacing=".7">Least privilege first, port forwarding second.</text>
+      <path d="M76 232 V274" stroke="#1E2A36" stroke-width="1.5"/>
+    </g>
+  </g>
+
+  <!-- Trenner -->
+  <rect class="h" x="640" y="86" width="1" height="190" fill="#1A242F"/>
+
+  <!-- Spalte rechts -->
+  <g>
+    <g class="p p4">
+      <text class="mono" x="680" y="112" font-size="20" fill="#1E3B58" font-weight="700">04</text>
+      <text class="sans" x="726" y="108" font-size="16" font-weight="600" fill="#E6EDF3">Observe before guessing</text>
+      <text class="mono" x="726" y="128" font-size="10.5" fill="#5B6C7C" letter-spacing=".7">Metrics and logs beat intuition every single time.</text>
+      <path d="M716 92 V134" stroke="#1E2A36" stroke-width="1.5"/>
+    </g>
+    <g class="p p5">
+      <text class="mono" x="680" y="182" font-size="20" fill="#1E3B58" font-weight="700">05</text>
+      <text class="sans" x="726" y="178" font-size="16" font-weight="600" fill="#E6EDF3">CLI first, GUI when useful</text>
+      <text class="mono" x="726" y="198" font-size="10.5" fill="#5B6C7C" letter-spacing=".7">What you can type, you can automate and review.</text>
+      <path d="M716 162 V204" stroke="#1E2A36" stroke-width="1.5"/>
+    </g>
+    <g class="p p6">
+      <text class="mono" x="680" y="252" font-size="20" fill="#1E3B58" font-weight="700">06</text>
+      <text class="sans" x="726" y="248" font-size="16" font-weight="600" fill="#E6EDF3">Backups are real after restore testing</text>
+      <text class="mono" x="726" y="268" font-size="10.5" fill="#5B6C7C" letter-spacing=".7">An untested backup is a hopeful rumour.</text>
+      <path d="M716 232 V274" stroke="#1E2A36" stroke-width="1.5"/>
+    </g>
+  </g>
+
+  <!-- Zitat -->
+  <g class="q">
+    <rect x="40" y="292" width="1200" height="1" fill="#18232E"/>
+    <rect x="40" y="304" width="3" height="20" rx="1.5" fill="#2388FF"/>
+    <text class="mono" x="58" y="319" font-size="12.5" fill="#7D8996" letter-spacing=".7" font-style="italic">Infrastructure should be reproducible, observable and boring.</text>
+    <text class="mono" x="1240" y="319" font-size="10" fill="#2E3D4C" letter-spacing="2" text-anchor="end">EOF</text>
+  </g>
+
+  <rect x=".5" y=".5" width="1279" height="335" rx="12" fill="none" stroke="#1B2733"/>
+</g>
+</svg>
